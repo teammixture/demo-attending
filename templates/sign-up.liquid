@@ -1,0 +1,28 @@
+{% block content %}
+    <p>This is just a quick and dirty demo, testing Firebase + Mixture working together.</p>
+    <a href="/" class="button small success">Back to the list</a>
+    <hr />
+    <h3>Sign up and join the other <span id="count">0</span> attendees</h3>
+	<div class="row" id="frm">
+		<form>
+		  <fieldset>
+		    <legend>Your Details</legend>
+		    <div class="row">
+		      <div class="large-12 columns">
+		        <label>First name</label>
+		        <input type="text" placeholder="first name" id="firstName">
+		      </div>
+		      <div class="large-12 columns">
+		        <label>Last name</label>
+		        <input type="text" placeholder="last name" id="lastName">
+		      </div>
+		      <div class="large-12 columns">
+		        <label>Twitter username</label>
+		        <input type="text" placeholder="twitter username" id="twitter">
+		      </div>
+		    </div>
+		    <button class="button" type="submit">Confirm</button>
+		  </fieldset>
+		</form>
+	</div>
+{% endblock %}

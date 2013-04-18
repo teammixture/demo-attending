@@ -1,0 +1,9 @@
+<script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'></script>
+<script>
+document.write('<script src=' + ('__proto__' in {} ? '{{ "zepto.js" | asset_url }}' : '{{ "jquery.js" | asset_url }}') + '><\/script>')
+</script>
+{{ "app.js" | asset_url | script_tag }}
+<script>
+$(document).foundation();
+</script>
+{{ "attendees.js" | asset_url | script_tag }}

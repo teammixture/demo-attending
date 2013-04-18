@@ -1,0 +1,12 @@
+{% model "https://attendees.firebaseio.com/people.json" %}
+{% block content %}
+    <p>This is just a quick and dirty demo, testing Firebase + Mixture working together.</p>
+    <a href="/sign-up" class="button small success">Not on the list? sign up already!</a>
+    <hr />
+    <h3>Confirmed Attendees (<span id="count">0</span>)</h3>
+    {% for person in model %}
+    <div class="panel">
+        <h5><a href="http://twitter.com/{{ person[1].twitter }}">{{ person[1].firstName }} {{ person[1].lastName }}</a></h5>     
+    </div>
+    {% endfor %}
+{% endblock %}
