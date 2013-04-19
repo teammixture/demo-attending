@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *:before,
 *:after {
@@ -3820,3 +3819,19 @@ table {
 
 body {
   padding: 1em; }
+
+.panel {
+  *zoom: 1;
+  float: left;
+  display: inline-block;
+  margin-right: 1em; }
+  .panel:before, .panel:after {
+    content: " ";
+    display: table; }
+  .panel:after {
+    clear: both; }
+  .panel h5 {
+    float: left; }
+  .panel img {
+    float: left;
+    margin-right: 1em; }

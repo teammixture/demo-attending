@@ -6,3 +6,19 @@
 body{
 	padding:1em;
 }
+
+.panel{
+	@include clearfix;
+	float:left;
+	display:inline-block;
+	margin-right:1em;
+
+	h5{
+		float:left;
+	}
+
+	img{
+		float:left;
+		margin-right:1em;
+	}
+}

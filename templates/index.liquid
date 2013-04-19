@@ -6,6 +6,7 @@
     <h3>Confirmed Attendees (<span id="count">0</span>)</h3>
     {% for person in model %}
     <div class="panel">
+        <img src="http://api.twitter.com/1/users/profile_image?screen_name={{ person[1].twitter }}&amp;size=normal" width="25" />
         <h5><a href="http://twitter.com/{{ person[1].twitter }}">{{ person[1].firstName }} {{ person[1].lastName }}</a></h5>     
     </div>
     {% endfor %}
